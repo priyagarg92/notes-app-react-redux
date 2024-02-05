@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: white;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.notes-list-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.note-wrapper,
+.add-notes-wrapper {
+  background-color: #91dced;
+  min-height: 200px;
+  border-radius: 4px;
+  padding: 1rem;
+  min-width: 200px;
+  margin: 0.5rem;
+  box-shadow: 0 0 10px #e1e1e1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+
+.note-footer,
+.add-notes-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-notes-wrapper {
+  background-color: #edf489;
+}
+
+.add-notes-wrapper textarea {
+  background-color: transparent;
+  border: none;
+  resize: none;
+}
+
+.add-notes-wrapper textarea:focus {
+  outline: none;
+}
+
+.add-notes-footer button {
+  background-color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.add-notes-footer button:hover {
+  background-color: #ededed;
+  cursor: pointer;
+}
+
+.delete-icon {
+  max-width: 16px;
+  max-height: 16px;
+}
