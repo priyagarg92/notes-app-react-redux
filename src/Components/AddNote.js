@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { ADD_NOTE } from '../Store/action';
+import React, { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { ADD_NOTE } from "../Store/action";
 
 const AddNote = () => {
-  const [text, setText] = useState('');
+  const [text, setText] = useState("");
   const charactersLimit = 200;
 
   const notesList = useSelector((state) => state);
@@ -22,9 +22,10 @@ const AddNote = () => {
         id: notesList.length + 1,
         text,
         date: date.toLocaleDateString(),
+        isEditable: false,
       };
       dispatch({ type: ADD_NOTE, payload: newNote });
-      setText('');
+      setText("");
     }
   };
 

@@ -33,6 +33,7 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   white-space: pre-wrap;
+  cursor: pointer;
 }
 
 .note-footer,
@@ -68,7 +69,6 @@ h1 {
   cursor: pointer;
 }
 
-.delete-icon {
-  max-width: 16px;
-  max-height: 16px;
+.edit-button {
+  margin: 0 0 0 10px;
 }
